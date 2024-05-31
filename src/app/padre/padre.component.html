@@ -1,0 +1,7 @@
+<div id="card">
+    <p>Mensaje desde hijo: {{recibePadre}}</p>
+    <p>Contador : {{contador}}</p>
+    <button (click)="incrementar()">Incrementar</button>
+    <button (click)="decrementar()">Decrementar</button>
+    <app-hijo [recibeHijo] = "mensajePadre" (mensajeDesdeHijo)="recibirMensaje($event)"></app-hijo>
+</div>
